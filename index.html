@@ -130,17 +130,13 @@
             padding: 20px;
             border-radius: 5px;
             margin: 15px 0;
-        }
-        @media (max-width: 768px) {
-            .slide {
-                width: 95%;
-                padding: 20px;
+        
             }
-            .timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 0;
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
         }
         
         .timeline::before {
@@ -195,42 +191,22 @@
             border-radius: 5px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-        
-        @media (max-width: 768px) {
-            .timeline::before {
-                left: 30px;
-            }
-            
-            .timeline-item {
-                width: 100%;
-                padding-left: 70px;
-            }
-            
-            .timeline-item:nth-child(even) {
-                left: 0;
-            }
-            
-            .investment-grid {
-                grid-template-columns: 1fr;
-            }
-            kpi-grid {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                    gap: 15px;
-                    margin: 15px 0;
-                }
-                .kpi-item {
-                    background: white;
-                    padding: 15px;
-                    border-radius: 5px;
-                    text-align: center;
-                }
-                .kpi-value {
-                    font-size: 1.5em;
-                    color: var(--langham-gold);
-                    font-weight: bold;
-                }
+        kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
         }
+        .kpi-item {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .kpi-value {
+            font-size: 1.5em;
+            color: var(--langham-gold);
+            font-weight: bold;
         }
     </style>
 </head>
