@@ -213,6 +213,23 @@
     .investment-grid {
         grid-template-columns: 1fr;
     }
+    kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+        }
+        .kpi-item {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .kpi-value {
+            font-size: 1.5em;
+            color: var(--langham-gold);
+            font-weight: bold;
+        }
 }
         }
     </style>
@@ -311,36 +328,33 @@
         </div>
 
         <div class="slide" id="slide6">
-            <h1>Smart Room Innovation</h1>
-            <div class="section-container">
-                    <h2>What</h2>
-                    <ul>
-                        <li>AI-powered room controls and automation</li>
-                        <li>Predictive maintenance systems</li>
-                        <li>Smart energy management</li>
-                        <li>Voice-activated room controls</li>
-                    </ul>
+            <h1>Smart Room Management</h1>
+            <div class="project-card">
+                <h3>Overview</h3>
+                <p>AI-powered room automation and personalization system</p>
+                <div class="kpi-grid">
+                    <div class="kpi-item">
+                        <div class="kpi-value">30%</div>
+                        <div>Energy Savings</div>
+                    </div>
+                    <div class="kpi-item">
+                        <div class="kpi-value">31%</div>
+                        <div>Guest Satisfaction Increase</div>
+                    </div>
+                    <div class="kpi-item">
+                        <div class="kpi-value">50%</div>
+                        <div>Maintenance Response Time Reduces</div>
+                    </div>
                 </div>
-
-                <div class="section-container">
-                    <h2>How</h2>
-                    <ul>
-                        <li>Integration of IoT sensors with AI analytics</li>
-                        <li>Machine learning algorithms for pattern recognition</li>
-                        <li>Natural language processing for voice commands</li>
-                        <li>Cloud-based control systems</li>
-                    </ul>
-                </div>
-
-                <div class="section-container">
-                    <h2>Why</h2>
-                    <ul>
-                        <li>30% reduction in energy costs</li>
-                        <li>Improved guest satisfaction scores</li>
-                        <li>Reduced maintenance response time by 50%</li>
-                        <li>Enhanced guest comfort and control</li>
-                    </ul>
-        </div>
+                <h3>Key Benefits</h3>
+                <ul class="benefit-list">
+                    <li>AI-powered room controls and automation</li>
+                    <li>Predictive maintenance systems and alerts</li>
+                    <li>Personalized room settings memory</li>
+                    <li>Smart energy management</li>
+                    <li>Voice-controlled amenities</li>
+                </ul>
+            </div>
         </div>
 
         <div class="slide" id="slide7">
